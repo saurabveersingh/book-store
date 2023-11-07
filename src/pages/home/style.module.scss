@@ -21,6 +21,18 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .featured_book {
+    width: 100vw;
+    height: 150vw;
+  }
+  .featured_content {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
 @media screen and (min-width: 2500px) {
   .featured_book {
     width: 1000px;
