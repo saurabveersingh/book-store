@@ -28,7 +28,7 @@ const ToastMessage = () => {
   }, [state, dispatch])
 
   return (
-    <div className={`position-fixed right-0 fs-18px max-z-index ${Style.alert_box_wrapper}`}>
+    <div className={`position-fixed right-0 fs-18px z-index-max ${Style.alert_box_wrapper}`}>
       {state.toast_message.message && (
         <div
           className={`alert ${

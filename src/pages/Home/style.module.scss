@@ -1,0 +1,34 @@
+.landing_page {
+  background-image: url("/images/home/banner.jpeg");
+  height: calc(100vh - 8vh); // 100vh - nav height
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 10px 10px black;
+}
+
+.featured_book {
+  background-image: url("/images/home/featured-book.jpg");
+  width: 500px;
+  height: 650px;
+}
+
+.tag {
+  background-image: url("/images/home/tag.png");
+  width: 200px;
+  height: 140px;
+  > p {
+    transform: rotate(-15deg);
+    margin-left: -10px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .featured_book {
+    width: 1000px;
+    height: 1300px;
+  }
+
+  .tag {
+    width: 400px;
+    height: 280px;
+  }
+}

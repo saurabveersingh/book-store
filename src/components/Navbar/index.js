@@ -125,7 +125,7 @@ const Navbar = () => {
     )
   }
 
-  return <header className={`text-white fw-600  ${Style.header}`}>{Device.isMobile ? <MobileNav /> : <DesktopNav />}</header>
+  return <header className={`text-white fw-600 ${Style.header}`}>{Device.isMobile ? <MobileNav /> : <DesktopNav />}</header>
 }
 
 export default Navbar

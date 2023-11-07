@@ -329,18 +329,6 @@ input[type="reset"] {
   @include fs(12px);
 }
 
-.fs-14px {
-  @include fs(14px);
-}
-
-.fs-15px {
-  @include fs(15px);
-}
-
-.fs-16px {
-  @include fs(16px);
-}
-
 .fs-18px {
   @include fs(18px);
 }
@@ -349,24 +337,8 @@ input[type="reset"] {
   @include fs(20px);
 }
 
-.fs-22px {
-  @include fs(22px);
-}
-
-.fs-24px {
-  @include fs(24px);
-}
-
-.fs-26px {
-  @include fs(26px);
-}
-
 .fs-30px {
   @include fs(30px);
-}
-
-.fs-40px {
-  @include fs(40px);
 }
 
 .fs-50px {
@@ -611,7 +583,7 @@ $max_z_index: 2;
   z-index: 1 !important;
 }
 
-.max-z-index {
+.z-index-max {
   z-index: $max_z_index !important;
 }
 
