@@ -55,7 +55,7 @@ const Navbar = () => {
             About Us
           </a>
           <button
-            className={`${Style.nav_btn}`}
+            className={`br-10px bg-darkcyan px-5 py-1 ${Style.nav_btn}`}
             onClick={() => {
               dispatch({ type: TOAST_MESSAGE, payload: { type: "error", message: "Not Implemented" } })
             }}
