@@ -1,13 +1,33 @@
+import React from "react"
+import PropTypes from "prop-types"
+
 import Navbar from "../Navbar"
+import ToastMessage from "../ToastMessage"
+import Footer from "../Footer"
+
+// !definition of component
+/**
+ *
+ * @description --> Layout for all pages of the website
+ * @returns Layout wrapper Component
+ */
+// ! component
 
 const Layout = (props) => {
   return (
-    <div>
-      <div className="position-fixed right-0 fs-18px alert-box-wrapper fixed-alert-box" id="fixed-error-div"></div>
+    <React.Fragment>
       <Navbar />
-      <div>{props.children}</div>
-    </div>
+      <main>
+        <ToastMessage />
+        {props.children}
+      </main>
+      <Footer />
+    </React.Fragment>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
