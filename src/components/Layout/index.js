@@ -1,13 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Navbar from "../Navbar"
-import ToastMessage from "../ToastMessage"
-import Footer from "../Footer"
+import Navbar from "components/Navbar"
+import ToastMessage from "components/ToastMessage"
+import Footer from "components/Footer"
+
+import Style from "./style.module.scss"
 
 // !definition of component
 /**
- *
+ * @param props --> children
  * @description --> Layout for all pages of the website
  * @returns Layout wrapper Component
  */
@@ -17,7 +19,7 @@ const Layout = (props) => {
   return (
     <React.Fragment>
       <Navbar />
-      <main>
+      <main className={`${Style.main_section}`}>
         <ToastMessage />
         {props.children}
       </main>

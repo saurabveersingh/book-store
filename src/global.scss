@@ -15,6 +15,25 @@ a {
   text-decoration: none;
 }
 
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+@media screen and (min-width: 2500px) {
+  div,
+  p {
+    font-size: 32px;
+  }
+}
+
 // bootstrap responsive
 
 @media screen and (min-width: 2500px) {
@@ -265,14 +284,20 @@ a {
   }
 }
 
+//box-shadow
+
+.bs-1 {
+  box-shadow: 0px 3px 6px #00000029;
+}
+
 // background
 
 @mixin bg($color) {
   background: $color !important;
 }
 
-.bg-black {
-  @include bg(black);
+.bg-darkcyan {
+  @include bg(darkcyan);
 }
 
 .bg-transparent {
@@ -455,8 +480,8 @@ a {
   border-radius: 0px !important;
 }
 
-.br-4px {
-  @include br(4px);
+.br-10px {
+  @include br(10px);
 }
 
 //width
@@ -600,6 +625,15 @@ $max_z_index: 2;
 
 .rotate-180 {
   transform: rotate(180deg);
+}
+
+/* Background Image */
+
+.bg-img-general {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
 }
 
 //general
