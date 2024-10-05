@@ -5,6 +5,8 @@ import Home from "./pages/home"
 import Books from "./pages/books"
 import Authors from "./pages/authors"
 import AboutUs from "./pages/about-us"
+import TermsAndConditions from "pages/terms-and-conditions"
+import CookiesPolicy from "pages/cookies-policy"
 import MutableStore from "./stores/global/MutableStore/MutableStore"
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
               <Route path="books" element={<Books />} />
               <Route path="authors" element={<Authors />} />
               <Route path="about-us" element={<AboutUs />} />
+              <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+              <Route path="cookies-policy" element={<CookiesPolicy />} />
             </Routes>
           </BrowserRouter>
         </Layout>
